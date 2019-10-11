@@ -10,7 +10,7 @@ function round() {
   let divSelector = randomDivId();
   $(divSelector).addClass("target");
   // TODO: помечать target текущим номером
-   $(divSelector).text(hits);
+   $(divSelector).text(hits+1);
   // FIXME: тут надо определять при первом клике firstHitTime
   if (hits === 1) { firstHitTime = getTimestamp(); }
   if (hits === maxHits) {
